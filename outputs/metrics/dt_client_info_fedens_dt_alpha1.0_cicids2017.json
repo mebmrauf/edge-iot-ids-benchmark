@@ -1,0 +1,408 @@
+{
+  "tag": "fedens_dt_alpha1.0",
+  "domain": "cicids2017",
+  "alpha": 1.0,
+  "seed": 42,
+  "client_tuning_enabled": true,
+  "checkpoint_mode": "localtune",
+  "grid": {
+    "criterion": [
+      "gini",
+      "entropy"
+    ],
+    "max_depth": [
+      8,
+      16,
+      24,
+      null
+    ],
+    "min_samples_leaf": [
+      1,
+      5,
+      20
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 34541,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "cv_best_macro_f1": 0.8915669234353777,
+      "cv_splits": 3,
+      "search_rows": 34541,
+      "search_seconds": 9.11,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "tree_depth": 14,
+      "tree_leaves": 110,
+      "tree_nodes": 219
+    },
+    {
+      "client": 1,
+      "n_rows": 23105,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 5
+      },
+      "cv_best_macro_f1": 0.8894852463801312,
+      "cv_splits": 3,
+      "search_rows": 23105,
+      "search_seconds": 5.23,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 5
+      },
+      "tree_depth": 18,
+      "tree_leaves": 107,
+      "tree_nodes": 213
+    },
+    {
+      "client": 2,
+      "n_rows": 75515,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.7952546125865968,
+      "cv_splits": 3,
+      "search_rows": 50000,
+      "search_seconds": 12.81,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 20,
+      "tree_leaves": 188,
+      "tree_nodes": 375
+    },
+    {
+      "client": 3,
+      "n_rows": 24579,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8243789149207362,
+      "cv_splits": 3,
+      "search_rows": 24579,
+      "search_seconds": 6.1,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 19,
+      "tree_leaves": 182,
+      "tree_nodes": 363
+    },
+    {
+      "client": 4,
+      "n_rows": 12445,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "cv_best_macro_f1": 0.9092796825721406,
+      "cv_splits": 3,
+      "search_rows": 12445,
+      "search_seconds": 2.56,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "tree_depth": 14,
+      "tree_leaves": 89,
+      "tree_nodes": 177
+    },
+    {
+      "client": 5,
+      "n_rows": 17597,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9126937741293237,
+      "cv_splits": 3,
+      "search_rows": 17597,
+      "search_seconds": 4.17,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 164,
+      "tree_nodes": 327
+    },
+    {
+      "client": 6,
+      "n_rows": 9072,
+      "n_classes_local": 6,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9474468398501074,
+      "cv_splits": 3,
+      "search_rows": 9072,
+      "search_seconds": 1.77,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 17,
+      "tree_leaves": 88,
+      "tree_nodes": 175
+    },
+    {
+      "client": 7,
+      "n_rows": 23401,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "cv_best_macro_f1": 0.7889173624722954,
+      "cv_splits": 3,
+      "search_rows": 23401,
+      "search_seconds": 5.78,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "tree_depth": 11,
+      "tree_leaves": 94,
+      "tree_nodes": 187
+    },
+    {
+      "client": 8,
+      "n_rows": 38789,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.7767768320165803,
+      "cv_splits": 3,
+      "search_rows": 38789,
+      "search_seconds": 10.46,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 24,
+      "tree_leaves": 159,
+      "tree_nodes": 317
+    },
+    {
+      "client": 9,
+      "n_rows": 22683,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 18,
+      "tree_leaves": 121,
+      "tree_nodes": 241
+    },
+    {
+      "client": 10,
+      "n_rows": 13928,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8717263085526361,
+      "cv_splits": 3,
+      "search_rows": 13928,
+      "search_seconds": 3.15,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 111,
+      "tree_nodes": 221
+    },
+    {
+      "client": 11,
+      "n_rows": 8053,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9221491213213762,
+      "cv_splits": 3,
+      "search_rows": 8053,
+      "search_seconds": 1.38,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 112,
+      "tree_nodes": 223
+    },
+    {
+      "client": 12,
+      "n_rows": 15747,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8423514951271077,
+      "cv_splits": 3,
+      "search_rows": 15747,
+      "search_seconds": 3.0,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 125,
+      "tree_nodes": 249
+    },
+    {
+      "client": 13,
+      "n_rows": 9396,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8219459592236822,
+      "cv_splits": 3,
+      "search_rows": 9396,
+      "search_seconds": 2.09,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 101,
+      "tree_nodes": 201
+    },
+    {
+      "client": 14,
+      "n_rows": 21146,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "cv_best_macro_f1": 0.8657689686696436,
+      "cv_splits": 3,
+      "search_rows": 21146,
+      "search_seconds": 5.16,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 5
+      },
+      "tree_depth": 16,
+      "tree_leaves": 118,
+      "tree_nodes": 235
+    }
+  ]
+}

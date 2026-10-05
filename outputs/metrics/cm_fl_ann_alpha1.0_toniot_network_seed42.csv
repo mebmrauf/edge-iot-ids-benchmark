@@ -1,0 +1,9 @@
+,Benign,DDoS,DoS,Reconnaissance,BruteForce,WebAttack,Malware,Spoofing
+Benign,2127,37,15,24,10,8,9,9
+DDoS,25,24613,0,0,0,3,0,0
+DoS,50,0,4901,1,0,0,0,0
+Reconnaissance,21,0,0,23474,0,3,0,0
+BruteForce,3,0,0,0,6891,0,0,0
+WebAttack,9,1,0,0,6,10551,0,0
+Malware,13,0,0,0,0,0,2042,1
+Spoofing,5,0,0,0,0,0,1,149

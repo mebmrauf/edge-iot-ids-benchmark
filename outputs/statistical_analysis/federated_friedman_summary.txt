@@ -1,0 +1,42 @@
+Friedman test: federated models, Macro-F1
+Blocks (dataset x alpha): 16
+
+Friedman chi-square = 41.9250, df = 3, p-value = 0.000000
+
+Macro-F1 matrix:
+                           XGBoost (fed. ensemble)  Decision Tree (fed. ensemble)     ANN     SNN
+Block                                                                                            
+CICIDS2017 | alpha0.5                       0.9161                         0.9003  0.9005  0.8253
+CICIDS2017 | alpha1.0                       0.9250                         0.9244  0.9061  0.8854
+CICIDS2017 | alpha2.0                       0.9310                         0.9315  0.8942  0.8887
+CICIDS2017 | iid                            0.9350                         0.9298  0.9079  0.8921
+CICIOT2023 | alpha0.5                       0.6824                         0.6738  0.6452  0.5942
+CICIOT2023 | alpha1.0                       0.6816                         0.6834  0.6379  0.5962
+CICIOT2023 | alpha2.0                       0.6904                         0.6851  0.6586  0.6126
+CICIOT2023 | iid                            0.6840                         0.6811  0.6478  0.6102
+EDGEIIOT | alpha0.5                         0.9531                         0.9579  0.8873  0.7838
+EDGEIIOT | alpha1.0                         0.9606                         0.9655  0.8886  0.7881
+EDGEIIOT | alpha2.0                         0.9630                         0.9662  0.9143  0.8068
+EDGEIIOT | iid                              0.9629                         0.9662  0.9126  0.8133
+TONIOT_NETWORK | alpha0.5                   0.9904                         0.9852  0.9745  0.9399
+TONIOT_NETWORK | alpha1.0                   0.9921                         0.9892  0.9848  0.9490
+TONIOT_NETWORK | alpha2.0                   0.9923                         0.9884  0.9841  0.9583
+TONIOT_NETWORK | iid                        0.9917                         0.9901  0.9860  0.9573
+
+Average ranks (1 = best):
+Model
+XGBoost (fed. ensemble)          1.3750
+Decision Tree (fed. ensemble)    1.6875
+ANN                              2.9375
+SNN                              4.0000
+
+Nemenyi post-hoc pairwise p-values:
+Model                          XGBoost (fed. ensemble)  Decision Tree (fed. ensemble)     ANN     SNN
+Model                                                                                                
+XGBoost (fed. ensemble)                         1.0000                         0.9030  0.0035  0.0000
+Decision Tree (fed. ensemble)                   0.9030                         1.0000  0.0314  0.0000
+ANN                                             0.0035                         0.0314  1.0000  0.0918
+SNN                                             0.0000                         0.0000  0.0918  1.0000
+
+Nemenyi critical difference (alpha=0.05) = 1.1726
+Two models differ significantly if the difference in average rank exceeds CD.

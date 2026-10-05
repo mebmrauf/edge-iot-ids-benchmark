@@ -1,0 +1,5 @@
+Model,avg_rank
+XGBoost (fed. ensemble),1.375
+Decision Tree (fed. ensemble),1.6875
+ANN,2.9375
+SNN,4.0

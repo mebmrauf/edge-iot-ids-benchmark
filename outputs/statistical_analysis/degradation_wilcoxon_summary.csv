@@ -1,0 +1,5 @@
+Model,n_pairs,mean_F1_drop,median_F1_drop,n_federated_worse,n_federated_better_or_equal,wilcoxon_stat,p_two_sided,p_one_sided_degrades
+ANN,16,0.0294,0.0202,16,0,0.0,0.0,0.0
+Decision Tree,16,0.0103,0.0066,16,0,0.0,0.0004,0.0002
+SNN,16,0.0685,0.0649,16,0,0.0,0.0,0.0
+XGBoost,16,0.0165,0.0087,16,0,0.0,0.0004,0.0002

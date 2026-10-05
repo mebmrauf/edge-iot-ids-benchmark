@@ -1,0 +1,14 @@
+{
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 6,
+    "n_estimators": 300
+  },
+  "cv_best_macro_f1": 0.9948737508082065,
+  "search_seconds": 570.29,
+  "refit_seconds": 62.38,
+  "search_rows": 300000,
+  "n_configurations": 8,
+  "n_trees": 300,
+  "n_parameters_proxy_nodes": 82978
+}

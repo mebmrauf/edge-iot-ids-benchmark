@@ -1,0 +1,13 @@
+{
+  "tag": "snn_tuned",
+  "domain": "toniot_network",
+  "lr": 0.0005,
+  "hidden": [
+    128,
+    256,
+    256
+  ],
+  "global_rounds": 100,
+  "search_val_f1": 0.9811730584237455,
+  "completed_utc": "2026-10-05T17:55:19Z"
+}

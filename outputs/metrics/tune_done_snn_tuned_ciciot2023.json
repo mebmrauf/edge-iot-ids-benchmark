@@ -1,0 +1,13 @@
+{
+  "tag": "snn_tuned",
+  "domain": "ciciot2023",
+  "lr": 0.0005,
+  "hidden": [
+    128,
+    256,
+    256
+  ],
+  "global_rounds": 100,
+  "search_val_f1": 0.6414914354439014,
+  "completed_utc": "2026-10-05T17:54:55Z"
+}

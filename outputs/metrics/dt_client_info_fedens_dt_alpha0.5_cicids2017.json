@@ -1,0 +1,356 @@
+{
+  "tag": "fedens_dt_alpha0.5",
+  "domain": "cicids2017",
+  "alpha": 0.5,
+  "seed": 42,
+  "client_tuning_enabled": true,
+  "checkpoint_mode": "localtune",
+  "grid": {
+    "criterion": [
+      "gini",
+      "entropy"
+    ],
+    "max_depth": [
+      8,
+      16,
+      24,
+      null
+    ],
+    "min_samples_leaf": [
+      1,
+      5,
+      20
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 18472,
+      "n_classes_local": 6,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 24,
+      "tree_leaves": 114,
+      "tree_nodes": 227
+    },
+    {
+      "client": 1,
+      "n_rows": 50073,
+      "n_classes_local": 6,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.6986529028942123,
+      "cv_splits": 2,
+      "search_rows": 50001,
+      "search_seconds": 5.85,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 117,
+      "tree_nodes": 233
+    },
+    {
+      "client": 2,
+      "n_rows": 16484,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.7888812111352959,
+      "cv_splits": 3,
+      "search_rows": 16484,
+      "search_seconds": 3.45,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 15,
+      "tree_leaves": 102,
+      "tree_nodes": 203
+    },
+    {
+      "client": 3,
+      "n_rows": 10050,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9418680749264169,
+      "cv_splits": 3,
+      "search_rows": 10050,
+      "search_seconds": 2.07,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 15,
+      "tree_leaves": 86,
+      "tree_nodes": 171
+    },
+    {
+      "client": 4,
+      "n_rows": 18784,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.7843071768238864,
+      "cv_splits": 3,
+      "search_rows": 18784,
+      "search_seconds": 2.88,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 115,
+      "tree_nodes": 229
+    },
+    {
+      "client": 5,
+      "n_rows": 21910,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8112978766792663,
+      "cv_splits": 3,
+      "search_rows": 21910,
+      "search_seconds": 5.43,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 24,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 145,
+      "tree_nodes": 289
+    },
+    {
+      "client": 6,
+      "n_rows": 3323,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 8,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8914990329546763,
+      "cv_splits": 3,
+      "search_rows": 3323,
+      "search_seconds": 0.44,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 8,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 8,
+      "tree_leaves": 50,
+      "tree_nodes": 99
+    },
+    {
+      "client": 7,
+      "n_rows": 9184,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9350111959207918,
+      "cv_splits": 3,
+      "search_rows": 9184,
+      "search_seconds": 1.94,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 125,
+      "tree_nodes": 249
+    },
+    {
+      "client": 8,
+      "n_rows": 8812,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8800520255893122,
+      "cv_splits": 3,
+      "search_rows": 8812,
+      "search_seconds": 1.51,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 91,
+      "tree_nodes": 181
+    },
+    {
+      "client": 9,
+      "n_rows": 1606,
+      "n_classes_local": 6,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.7995828456085002,
+      "cv_splits": 3,
+      "search_rows": 1606,
+      "search_seconds": 0.27,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 12,
+      "tree_leaves": 55,
+      "tree_nodes": 109
+    },
+    {
+      "client": 10,
+      "n_rows": 18571,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.8567066229661746,
+      "cv_splits": 3,
+      "search_rows": 18571,
+      "search_seconds": 4.42,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 152,
+      "tree_nodes": 303
+    },
+    {
+      "client": 11,
+      "n_rows": 6206,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 14,
+      "tree_leaves": 83,
+      "tree_nodes": 165
+    },
+    {
+      "client": 12,
+      "n_rows": 25372,
+      "n_classes_local": 6,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 16,
+      "tree_leaves": 89,
+      "tree_nodes": 177
+    },
+    {
+      "client": 13,
+      "n_rows": 134379,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV after the search-row cap",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 20,
+      "tree_leaves": 217,
+      "tree_nodes": 433
+    },
+    {
+      "client": 14,
+      "n_rows": 6771,
+      "n_classes_local": 7,
+      "n_configurations": 48,
+      "tuned": false,
+      "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
+      "best_params": {},
+      "params_used": {},
+      "tree_depth": 13,
+      "tree_leaves": 83,
+      "tree_nodes": 165
+    }
+  ]
+}

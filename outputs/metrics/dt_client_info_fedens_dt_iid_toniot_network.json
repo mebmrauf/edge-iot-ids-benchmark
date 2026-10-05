@@ -1,0 +1,421 @@
+{
+  "tag": "fedens_dt_iid",
+  "domain": "toniot_network",
+  "alpha": "iid",
+  "seed": 42,
+  "client_tuning_enabled": true,
+  "checkpoint_mode": "localtune",
+  "grid": {
+    "criterion": [
+      "gini",
+      "entropy"
+    ],
+    "max_depth": [
+      8,
+      16,
+      24,
+      null
+    ],
+    "min_samples_leaf": [
+      1,
+      5,
+      20
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 23330,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9891662273204794,
+      "cv_splits": 3,
+      "search_rows": 23330,
+      "search_seconds": 0.9,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 15,
+      "tree_leaves": 92,
+      "tree_nodes": 183
+    },
+    {
+      "client": 1,
+      "n_rows": 23332,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9924614193402587,
+      "cv_splits": 3,
+      "search_rows": 23332,
+      "search_seconds": 1.04,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 88,
+      "tree_nodes": 175
+    },
+    {
+      "client": 2,
+      "n_rows": 23335,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9808104495939408,
+      "cv_splits": 3,
+      "search_rows": 23335,
+      "search_seconds": 1.19,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 93,
+      "tree_nodes": 185
+    },
+    {
+      "client": 3,
+      "n_rows": 23331,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9876126731586052,
+      "cv_splits": 3,
+      "search_rows": 23331,
+      "search_seconds": 1.14,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 13,
+      "tree_leaves": 86,
+      "tree_nodes": 171
+    },
+    {
+      "client": 4,
+      "n_rows": 23335,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.980815855562251,
+      "cv_splits": 3,
+      "search_rows": 23335,
+      "search_seconds": 1.08,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 15,
+      "tree_leaves": 110,
+      "tree_nodes": 219
+    },
+    {
+      "client": 5,
+      "n_rows": 23331,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9849038252532463,
+      "cv_splits": 3,
+      "search_rows": 23331,
+      "search_seconds": 1.08,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 13,
+      "tree_leaves": 107,
+      "tree_nodes": 213
+    },
+    {
+      "client": 6,
+      "n_rows": 23332,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9845631166507275,
+      "cv_splits": 3,
+      "search_rows": 23332,
+      "search_seconds": 1.12,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 12,
+      "tree_leaves": 106,
+      "tree_nodes": 211
+    },
+    {
+      "client": 7,
+      "n_rows": 23336,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.981759021939538,
+      "cv_splits": 3,
+      "search_rows": 23336,
+      "search_seconds": 1.09,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 107,
+      "tree_nodes": 213
+    },
+    {
+      "client": 8,
+      "n_rows": 23332,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9819211032734292,
+      "cv_splits": 3,
+      "search_rows": 23332,
+      "search_seconds": 1.06,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 142,
+      "tree_nodes": 283
+    },
+    {
+      "client": 9,
+      "n_rows": 23335,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9740495842476604,
+      "cv_splits": 3,
+      "search_rows": 23335,
+      "search_seconds": 1.07,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 99,
+      "tree_nodes": 197
+    },
+    {
+      "client": 10,
+      "n_rows": 23332,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.976742092283268,
+      "cv_splits": 3,
+      "search_rows": 23332,
+      "search_seconds": 1.08,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 16,
+      "tree_leaves": 134,
+      "tree_nodes": 267
+    },
+    {
+      "client": 11,
+      "n_rows": 23330,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9754689701742594,
+      "cv_splits": 3,
+      "search_rows": 23330,
+      "search_seconds": 1.09,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 12,
+      "tree_leaves": 125,
+      "tree_nodes": 249
+    },
+    {
+      "client": 12,
+      "n_rows": 23335,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9856268093367472,
+      "cv_splits": 3,
+      "search_rows": 23335,
+      "search_seconds": 1.06,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 14,
+      "tree_leaves": 102,
+      "tree_nodes": 203
+    },
+    {
+      "client": 13,
+      "n_rows": 23332,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.9771380002389506,
+      "cv_splits": 3,
+      "search_rows": 23332,
+      "search_seconds": 1.16,
+      "params_used": {
+        "class_weight": "balanced",
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 15,
+      "tree_leaves": 115,
+      "tree_nodes": 229
+    },
+    {
+      "client": 14,
+      "n_rows": 23338,
+      "n_classes_local": 8,
+      "n_configurations": 48,
+      "tuned": true,
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "cv_best_macro_f1": 0.980470472149506,
+      "cv_splits": 3,
+      "search_rows": 23338,
+      "search_seconds": 1.09,
+      "params_used": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 16,
+        "min_samples_leaf": 1
+      },
+      "tree_depth": 13,
+      "tree_leaves": 105,
+      "tree_nodes": 209
+    }
+  ]
+}

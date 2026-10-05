@@ -1,0 +1,7 @@
+{
+  "tag": "fedens_xgb_iid",
+  "domain": "cicids2017",
+  "completed_local": "2026-10-05T23:42:10",
+  "global_rounds": 100,
+  "seed": 42
+}

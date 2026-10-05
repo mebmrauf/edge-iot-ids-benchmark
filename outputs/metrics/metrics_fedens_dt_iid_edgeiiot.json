@@ -1,0 +1,77 @@
+{
+  "run": "fedens_dt_iid_edgeiiot",
+  "seed": 42,
+  "alpha": "iid",
+  "domain": "edgeiiot",
+  "eval_samples": 74999,
+  "test_f1": 0.9661579950123462,
+  "test_metrics": {
+    "Accuracy": 0.9885198469312925,
+    "Precision (Macro)": 0.9707184374322269,
+    "Precision (Weighted)": 0.9887728817387185,
+    "Recall (Macro)": 0.9627900237527969,
+    "Recall (Weighted)": 0.9885198469312925,
+    "F1 (Macro)": 0.9661579950123462,
+    "F1 (Weighted)": 0.9885046416205564,
+    "FPR (Macro)": 0.0017933629719892503,
+    "FPR (Weighted)": 0.0010733877352171683,
+    "Inference (s)": 0.09195113182067871
+  },
+  "test_accuracy": 0.9885198469312925,
+  "test_precision_macro": 0.9707184374322269,
+  "test_precision_weighted": 0.9887728817387185,
+  "test_recall_macro": 0.9627900237527969,
+  "test_recall_weighted": 0.9885198469312925,
+  "test_f1_macro": 0.9661579950123462,
+  "test_f1_weighted": 0.9885046416205564,
+  "test_fpr_macro": 0.0017933629719892503,
+  "test_fpr_weighted": 0.0010733877352171683,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware",
+      "Spoofing"
+    ],
+    "fpr": [
+      9.632519385445263e-05,
+      0.004246615977892617,
+      0.00030420774623542916,
+      0.0014499692223514124,
+      0.00645642266359084,
+      0.0,
+      0.0
+    ],
+    "support": [
+      54236,
+      10948,
+      2680,
+      1894,
+      3907,
+      1275,
+      59
+    ]
+  },
+  "train_time": 20.84913992881775,
+  "test_time": 0.09195113182067871,
+  "emissions_kg": 0.00013682879380167668,
+  "energy_kwh": 0.00019789791282128383,
+  "energy_kwh_above_idle": 0.00015729794333800548,
+  "idle_kwh_per_hour": 0.007010355853469972,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0,
+  "n_clients_trained": 15,
+  "n_clients_single_class": 0,
+  "client_hyperparameter_tuning": "per-client GridSearchCV on local shard only (15/15 clients completed a local grid search; the rest fell back to library defaults on shards too small/degenerate for stratified CV)",
+  "client_tuning_provenance": {
+    "summary": "per-client GridSearchCV on local shard only (15/15 clients completed a local grid search; the rest fell back to library defaults on shards too small/degenerate for stratified CV)",
+    "record_source": "this run",
+    "client_tuning_enabled": true,
+    "n_clients_locally_tuned": 15,
+    "n_clients_in_record": 15
+  }
+}

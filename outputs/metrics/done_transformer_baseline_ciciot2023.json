@@ -1,0 +1,7 @@
+{
+  "tag": "transformer_baseline",
+  "domain": "ciciot2023",
+  "completed_local": "2026-10-06T00:03:45",
+  "global_rounds": 100,
+  "seed": 42
+}

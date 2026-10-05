@@ -1,0 +1,13 @@
+{
+  "tag": "snn_tuned",
+  "domain": "cicids2017",
+  "lr": 0.0005,
+  "hidden": [
+    64,
+    128,
+    128
+  ],
+  "global_rounds": 100,
+  "search_val_f1": 0.8962590450421024,
+  "completed_utc": "2026-10-05T17:54:32Z"
+}

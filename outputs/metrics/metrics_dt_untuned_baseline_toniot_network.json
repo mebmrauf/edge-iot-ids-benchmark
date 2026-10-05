@@ -1,0 +1,69 @@
+{
+  "run": "dt_untuned_baseline_toniot_network",
+  "seed": 42,
+  "domain": "toniot_network",
+  "eval_samples": 75002,
+  "test_f1": 0.9944758142856656,
+  "test_metrics": {
+    "Accuracy": 0.9990666915548919,
+    "Precision (Macro)": 0.9939228150941193,
+    "Precision (Weighted)": 0.9990661041422666,
+    "Recall (Macro)": 0.9950396414218372,
+    "Recall (Weighted)": 0.9990666915548919,
+    "F1 (Macro)": 0.9944758142856656,
+    "F1 (Weighted)": 0.9990662119236192,
+    "FPR (Macro)": 0.00013825340388449913,
+    "FPR (Weighted)": 0.0001727187859678627,
+    "Inference (s)": 0.016036033630371094
+  },
+  "test_accuracy": 0.9990666915548919,
+  "test_precision_macro": 0.9939228150941193,
+  "test_precision_weighted": 0.9990661041422666,
+  "test_recall_macro": 0.9950396414218372,
+  "test_recall_weighted": 0.9990666915548919,
+  "test_f1_macro": 0.9944758142856656,
+  "test_f1_weighted": 0.9990662119236192,
+  "test_fpr_macro": 0.00013825340388449913,
+  "test_fpr_weighted": 0.0001727187859678627,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "DoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware",
+      "Spoofing"
+    ],
+    "fpr": [
+      0.0004260407075024394,
+      0.00015885308075693492,
+      5.710206995003569e-05,
+      0.0002912395153774464,
+      1.468256298819522e-05,
+      7.759757895553658e-05,
+      1.3708770871603651e-05,
+      6.680294467380122e-05
+    ],
+    "support": [
+      2239,
+      24641,
+      4952,
+      23498,
+      6894,
+      10567,
+      2056,
+      155
+    ]
+  },
+  "train_time": 1.353250503540039,
+  "test_time": 0.016036033630371094,
+  "emissions_kg": 1.5773834856391104e-05,
+  "energy_kwh": 2.2813977296269664e-05,
+  "energy_kwh_above_idle": 2.017876407718547e-05,
+  "idle_kwh_per_hour": 0.007010355853469972,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0
+}

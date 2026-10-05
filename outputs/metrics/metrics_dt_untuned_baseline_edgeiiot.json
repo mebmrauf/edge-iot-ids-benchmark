@@ -1,0 +1,66 @@
+{
+  "run": "dt_untuned_baseline_edgeiiot",
+  "seed": 42,
+  "domain": "edgeiiot",
+  "eval_samples": 74999,
+  "test_f1": 0.9562858267461289,
+  "test_metrics": {
+    "Accuracy": 0.9861464819530927,
+    "Precision (Macro)": 0.9539882763211815,
+    "Precision (Weighted)": 0.9862410467153008,
+    "Recall (Macro)": 0.9586454240098031,
+    "Recall (Weighted)": 0.9861464819530927,
+    "F1 (Macro)": 0.9562858267461289,
+    "F1 (Weighted)": 0.9861894897033708,
+    "FPR (Macro)": 0.002145923056960001,
+    "FPR (Weighted)": 0.0011679433518127149,
+    "Inference (s)": 0.02746295928955078
+  },
+  "test_accuracy": 0.9861464819530927,
+  "test_precision_macro": 0.9539882763211815,
+  "test_precision_weighted": 0.9862410467153008,
+  "test_recall_macro": 0.9586454240098031,
+  "test_recall_weighted": 0.9861464819530927,
+  "test_f1_macro": 0.9562858267461289,
+  "test_f1_weighted": 0.9861894897033708,
+  "test_fpr_macro": 0.002145923056960001,
+  "test_fpr_weighted": 0.0011679433518127149,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware",
+      "Spoofing"
+    ],
+    "fpr": [
+      9.632519385445263e-05,
+      0.00482428065135595,
+      0.0005392773683264426,
+      0.004568770945899733,
+      0.004979463230743262,
+      0.0,
+      1.3344008540165465e-05
+    ],
+    "support": [
+      54236,
+      10948,
+      2680,
+      1894,
+      3907,
+      1275,
+      59
+    ]
+  },
+  "train_time": 1.789240837097168,
+  "test_time": 0.02746295928955078,
+  "emissions_kg": 1.9096727844812254e-05,
+  "energy_kwh": 2.7619936397905523e-05,
+  "energy_kwh_above_idle": 2.4135710015791175e-05,
+  "idle_kwh_per_hour": 0.007010355853469972,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0
+}

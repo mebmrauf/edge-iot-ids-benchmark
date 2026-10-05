@@ -1,0 +1,7 @@
+{
+  "tag": "fl_dnn_iid",
+  "domain": "cicids2017",
+  "completed_local": "2026-10-06T00:04:59",
+  "global_rounds": 100,
+  "seed": 42
+}

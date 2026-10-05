@@ -1,0 +1,66 @@
+{
+  "run": "dt_untuned_baseline_cicids2017",
+  "seed": 42,
+  "domain": "cicids2017",
+  "eval_samples": 75000,
+  "test_f1": 0.9234259151614157,
+  "test_metrics": {
+    "Accuracy": 0.9973333333333333,
+    "Precision (Macro)": 0.9222310141066031,
+    "Precision (Weighted)": 0.9973471069813492,
+    "Recall (Macro)": 0.9247445102078526,
+    "Recall (Weighted)": 0.9973333333333333,
+    "F1 (Macro)": 0.9234259151614157,
+    "F1 (Weighted)": 0.997339403662256,
+    "FPR (Macro)": 0.000980609621819783,
+    "FPR (Weighted)": 0.004197600686071815,
+    "Inference (s)": 0.015580177307128906
+  },
+  "test_accuracy": 0.9973333333333333,
+  "test_precision_macro": 0.9222310141066031,
+  "test_precision_weighted": 0.9973471069813492,
+  "test_recall_macro": 0.9247445102078526,
+  "test_recall_weighted": 0.9973333333333333,
+  "test_f1_macro": 0.9234259151614157,
+  "test_f1_weighted": 0.997339403662256,
+  "test_fpr_macro": 0.000980609621819783,
+  "test_fpr_weighted": 0.004197600686071815,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "DoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware"
+    ],
+    "fpr": [
+      0.005043943446694689,
+      1.4053431145214103e-05,
+      0.0002746140949297566,
+      0.00020749757919490938,
+      0.00040170860058113845,
+      0.00046730843692003687,
+      0.000455141763272737
+    ],
+    "support": [
+      61915,
+      3843,
+      5812,
+      2710,
+      319,
+      103,
+      298
+    ]
+  },
+  "train_time": 12.251768589019775,
+  "test_time": 0.015580177307128906,
+  "emissions_kg": 9.49880477296101e-05,
+  "energy_kwh": 0.0001373828992156765,
+  "energy_kwh_above_idle": 0.0001135247720925114,
+  "idle_kwh_per_hour": 0.007010355853469972,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0
+}

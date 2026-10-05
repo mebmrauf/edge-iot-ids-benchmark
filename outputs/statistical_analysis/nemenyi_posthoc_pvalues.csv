@@ -1,0 +1,5 @@
+Model,Decision Tree,XGBoost,ANN,SNN
+Decision Tree,1.0,1.0,0.3543,0.0314
+XGBoost,1.0,1.0,0.3543,0.0314
+ANN,0.3543,0.3543,1.0,0.6923
+SNN,0.0314,0.0314,0.6923,1.0

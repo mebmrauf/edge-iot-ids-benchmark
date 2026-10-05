@@ -1,0 +1,5 @@
+Model,XGBoost (fed. ensemble),Decision Tree (fed. ensemble),ANN,SNN
+XGBoost (fed. ensemble),1.0,0.903,0.003,0.0
+Decision Tree (fed. ensemble),0.903,1.0,0.031,0.0
+ANN,0.003,0.031,1.0,0.092
+SNN,0.0,0.0,0.092,1.0

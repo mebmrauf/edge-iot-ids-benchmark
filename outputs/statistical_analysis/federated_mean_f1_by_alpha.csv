@@ -1,0 +1,5 @@
+Alpha,XGBoost (fed. ensemble),Decision Tree (fed. ensemble),ANN,SNN
+iid,0.8934,0.8918,0.8636,0.8182
+alpha0.5,0.8855,0.8793,0.8519,0.7858
+alpha1.0,0.8898,0.8906,0.8544,0.8047
+alpha2.0,0.8942,0.8928,0.8628,0.8166

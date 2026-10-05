@@ -1,0 +1,30 @@
+Friedman test: Decision Tree vs XGBoost vs ANN vs SNN (centralized, Macro-F1)
+Datasets (blocks): 4
+
+Friedman chi-square = 10.8000, df = 3, p-value = 0.012858
+
+Macro-F1 matrix:
+                Decision Tree  XGBoost     ANN     SNN
+Dataset                                               
+CICIDS2017             0.9432   0.9417  0.9128  0.9068
+CICIOT2023             0.6878   0.7232  0.6809  0.6543
+EDGEIIOT               0.9698   0.9673  0.9643  0.9363
+TONIOT_NETWORK         0.9949   0.9967  0.9939  0.9920
+
+Average ranks (1 = best):
+Model
+Decision Tree    1.5
+XGBoost          1.5
+ANN              3.0
+SNN              4.0
+
+Nemenyi post-hoc pairwise p-values:
+Model          Decision Tree  XGBoost     ANN     SNN
+Model                                                
+Decision Tree         1.0000   1.0000  0.3543  0.0314
+XGBoost               1.0000   1.0000  0.3543  0.0314
+ANN                   0.3543   0.3543  1.0000  0.6923
+SNN                   0.0314   0.0314  0.6923  1.0000
+
+Nemenyi critical difference (alpha=0.05) = 2.3452
+Two models differ significantly if the difference in average rank exceeds CD.
