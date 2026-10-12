@@ -1,0 +1,145 @@
+{
+  "tag": "fedens_xgb_untuned_alpha2.0",
+  "domain": "ciciot2023",
+  "alpha": 2.0,
+  "seed": 42,
+  "client_tuning_enabled": false,
+  "checkpoint_mode": "defaults",
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 13822,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 1,
+      "n_rows": 16035,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 2,
+      "n_rows": 23628,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 3,
+      "n_rows": 42733,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 4,
+      "n_rows": 23442,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 5,
+      "n_rows": 24279,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 6,
+      "n_rows": 12621,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 7,
+      "n_rows": 24667,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 8,
+      "n_rows": 25521,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 9,
+      "n_rows": 24271,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 10,
+      "n_rows": 19227,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 11,
+      "n_rows": 19638,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 12,
+      "n_rows": 21449,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 13,
+      "n_rows": 25503,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 14,
+      "n_rows": 33161,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    }
+  ]
+}

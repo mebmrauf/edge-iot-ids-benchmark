@@ -31,10 +31,10 @@
         "max_depth": 4,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6927439594875836,
+      "cv_best_macro_f1": 0.6935662686086991,
       "cv_splits": 3,
       "search_rows": 13465,
-      "search_seconds": 35.85,
+      "search_seconds": 18.6,
       "params_used": {
         "learning_rate": 0.1,
         "max_depth": 4,
@@ -48,17 +48,17 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.1,
-        "max_depth": 6,
+        "learning_rate": 0.3,
+        "max_depth": 4,
         "n_estimators": 300
       },
-      "cv_best_macro_f1": 0.6472205491297239,
+      "cv_best_macro_f1": 0.6490733359268006,
       "cv_splits": 3,
       "search_rows": 23696,
-      "search_seconds": 57.02,
+      "search_seconds": 29.27,
       "params_used": {
-        "learning_rate": 0.1,
-        "max_depth": 6,
+        "learning_rate": 0.3,
+        "max_depth": 4,
         "n_estimators": 300
       }
     },
@@ -71,16 +71,16 @@
       "best_params": {
         "learning_rate": 0.1,
         "max_depth": 6,
-        "n_estimators": 100
+        "n_estimators": 300
       },
-      "cv_best_macro_f1": 0.6515707674483945,
+      "cv_best_macro_f1": 0.6542426970935326,
       "cv_splits": 2,
       "search_rows": 44556,
-      "search_seconds": 51.35,
+      "search_seconds": 25.78,
       "params_used": {
         "learning_rate": 0.1,
         "max_depth": 6,
-        "n_estimators": 100
+        "n_estimators": 300
       }
     },
     {
@@ -90,18 +90,18 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.1,
+        "learning_rate": 0.3,
         "max_depth": 4,
-        "n_estimators": 300
+        "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6139486291663868,
+      "cv_best_macro_f1": 0.6212306928578631,
       "cv_splits": 3,
       "search_rows": 17051,
-      "search_seconds": 41.98,
+      "search_seconds": 21.8,
       "params_used": {
-        "learning_rate": 0.1,
+        "learning_rate": 0.3,
         "max_depth": 4,
-        "n_estimators": 300
+        "n_estimators": 100
       }
     },
     {
@@ -111,17 +111,17 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.3,
-        "max_depth": 4,
+        "learning_rate": 0.1,
+        "max_depth": 6,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6088631031051001,
+      "cv_best_macro_f1": 0.631575763698405,
       "cv_splits": 3,
       "search_rows": 25506,
-      "search_seconds": 63.93,
+      "search_seconds": 32.69,
       "params_used": {
-        "learning_rate": 0.3,
-        "max_depth": 4,
+        "learning_rate": 0.1,
+        "max_depth": 6,
         "n_estimators": 100
       }
     },
@@ -133,17 +133,17 @@
       "tuned": true,
       "best_params": {
         "learning_rate": 0.1,
-        "max_depth": 4,
-        "n_estimators": 300
+        "max_depth": 6,
+        "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6217155970321154,
+      "cv_best_macro_f1": 0.6403135360338061,
       "cv_splits": 3,
       "search_rows": 50001,
-      "search_seconds": 104.63,
+      "search_seconds": 53.75,
       "params_used": {
         "learning_rate": 0.1,
-        "max_depth": 4,
-        "n_estimators": 300
+        "max_depth": 6,
+        "n_estimators": 100
       }
     },
     {
@@ -153,16 +153,16 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.1,
+        "learning_rate": 0.3,
         "max_depth": 4,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6910060339576063,
+      "cv_best_macro_f1": 0.7044507556339846,
       "cv_splits": 3,
       "search_rows": 13934,
-      "search_seconds": 37.26,
+      "search_seconds": 19.38,
       "params_used": {
-        "learning_rate": 0.1,
+        "learning_rate": 0.3,
         "max_depth": 4,
         "n_estimators": 100
       }
@@ -174,18 +174,18 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.3,
+        "learning_rate": 0.1,
         "max_depth": 6,
-        "n_estimators": 300
+        "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6426430388131443,
+      "cv_best_macro_f1": 0.633613183363367,
       "cv_splits": 3,
       "search_rows": 16776,
-      "search_seconds": 43.27,
+      "search_seconds": 22.78,
       "params_used": {
-        "learning_rate": 0.3,
+        "learning_rate": 0.1,
         "max_depth": 6,
-        "n_estimators": 300
+        "n_estimators": 100
       }
     },
     {
@@ -196,17 +196,17 @@
       "tuned": true,
       "best_params": {
         "learning_rate": 0.1,
-        "max_depth": 4,
-        "n_estimators": 300
+        "max_depth": 6,
+        "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.642638215972808,
+      "cv_best_macro_f1": 0.6392774671772617,
       "cv_splits": 3,
       "search_rows": 19067,
-      "search_seconds": 47.21,
+      "search_seconds": 24.13,
       "params_used": {
         "learning_rate": 0.1,
-        "max_depth": 4,
-        "n_estimators": 300
+        "max_depth": 6,
+        "n_estimators": 100
       }
     },
     {
@@ -216,17 +216,17 @@
       "n_configurations": 8,
       "tuned": true,
       "best_params": {
-        "learning_rate": 0.3,
-        "max_depth": 4,
+        "learning_rate": 0.1,
+        "max_depth": 6,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6448246969848347,
+      "cv_best_macro_f1": 0.6406687634220928,
       "cv_splits": 3,
       "search_rows": 5868,
-      "search_seconds": 20.66,
+      "search_seconds": 10.96,
       "params_used": {
-        "learning_rate": 0.3,
-        "max_depth": 4,
+        "learning_rate": 0.1,
+        "max_depth": 6,
         "n_estimators": 100
       }
     },
@@ -241,10 +241,10 @@
         "max_depth": 6,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6414802008315953,
+      "cv_best_macro_f1": 0.6282290723550749,
       "cv_splits": 3,
       "search_rows": 20693,
-      "search_seconds": 48.9,
+      "search_seconds": 24.46,
       "params_used": {
         "learning_rate": 0.3,
         "max_depth": 6,
@@ -259,17 +259,17 @@
       "tuned": true,
       "best_params": {
         "learning_rate": 0.3,
-        "max_depth": 4,
-        "n_estimators": 100
+        "max_depth": 6,
+        "n_estimators": 300
       },
-      "cv_best_macro_f1": 0.5866017279659603,
+      "cv_best_macro_f1": 0.5873520207372207,
       "cv_splits": 3,
       "search_rows": 19150,
-      "search_seconds": 50.39,
+      "search_seconds": 25.25,
       "params_used": {
         "learning_rate": 0.3,
-        "max_depth": 4,
-        "n_estimators": 100
+        "max_depth": 6,
+        "n_estimators": 300
       }
     },
     {
@@ -283,10 +283,10 @@
         "max_depth": 4,
         "n_estimators": 300
       },
-      "cv_best_macro_f1": 0.6462533324299203,
+      "cv_best_macro_f1": 0.6612842435880736,
       "cv_splits": 3,
       "search_rows": 13085,
-      "search_seconds": 34.68,
+      "search_seconds": 18.1,
       "params_used": {
         "learning_rate": 0.1,
         "max_depth": 4,
@@ -301,16 +301,16 @@
       "tuned": true,
       "best_params": {
         "learning_rate": 0.3,
-        "max_depth": 6,
+        "max_depth": 4,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.5880726188707676,
+      "cv_best_macro_f1": 0.582326072630717,
       "cv_splits": 3,
       "search_rows": 39957,
-      "search_seconds": 79.89,
+      "search_seconds": 39.95,
       "params_used": {
         "learning_rate": 0.3,
-        "max_depth": 6,
+        "max_depth": 4,
         "n_estimators": 100
       }
     },
@@ -325,10 +325,10 @@
         "max_depth": 6,
         "n_estimators": 100
       },
-      "cv_best_macro_f1": 0.6554440151861421,
+      "cv_best_macro_f1": 0.6712717672012273,
       "cv_splits": 3,
       "search_rows": 19104,
-      "search_seconds": 47.64,
+      "search_seconds": 24.72,
       "params_used": {
         "learning_rate": 0.1,
         "max_depth": 6,

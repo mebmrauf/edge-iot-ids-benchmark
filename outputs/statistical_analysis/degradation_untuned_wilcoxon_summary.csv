@@ -1,0 +1,9 @@
+Pairing,Model,n_pairs,mean_F1_drop,median_F1_drop,n_federated_worse,n_federated_better_or_equal,p_one_sided_exact,p_method
+tuned trees (original),Decision Tree,16,0.0061,0.0054,13,3,0.001678466796875,exact enumeration
+tuned trees (original),XGBoost,16,0.0174,0.0122,16,0,1.52587890625e-05,exact enumeration
+tuned trees (original),ANN,16,0.0294,0.0202,16,0,1.52587890625e-05,exact enumeration
+tuned trees (original),SNN,16,0.0685,0.0649,16,0,1.52587890625e-05,exact enumeration
+untuned trees,Decision Tree,16,-0.0062,-0.0042,6,10,0.85107421875,exact enumeration
+untuned trees,XGBoost,16,0.0111,0.0055,14,2,0.0001068115234375,exact enumeration
+untuned trees,ANN,16,0.0294,0.0202,16,0,1.52587890625e-05,exact enumeration
+untuned trees,SNN,16,0.0685,0.0649,16,0,1.52587890625e-05,exact enumeration

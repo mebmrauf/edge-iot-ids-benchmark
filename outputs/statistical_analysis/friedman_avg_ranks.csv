@@ -1,5 +1,5 @@
 Model,avg_rank
-Decision Tree,1.5
-XGBoost,1.5
+Decision Tree,1.75
+XGBoost,1.25
 ANN,3.0
 SNN,4.0

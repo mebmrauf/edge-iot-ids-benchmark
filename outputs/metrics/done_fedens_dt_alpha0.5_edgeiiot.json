@@ -1,7 +1,8 @@
 {
   "tag": "fedens_dt_alpha0.5",
   "domain": "edgeiiot",
-  "completed_local": "2026-10-05T23:52:26",
+  "completed_local": "2026-10-08T17:48:50",
   "global_rounds": 100,
-  "seed": 42
+  "seed": 42,
+  "tree_features": "raw"
 }

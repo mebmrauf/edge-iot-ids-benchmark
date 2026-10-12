@@ -1,7 +1,8 @@
 {
   "tag": "fedens_dt_iid",
   "domain": "toniot_network",
-  "completed_local": "2026-10-05T23:46:35",
+  "completed_local": "2026-10-08T17:42:38",
   "global_rounds": 100,
-  "seed": 42
+  "seed": 42,
+  "tree_features": "raw"
 }

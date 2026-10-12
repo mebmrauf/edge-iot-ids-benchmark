@@ -1,0 +1,16 @@
+{
+  "best_params": {
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 16,
+    "min_samples_leaf": 1
+  },
+  "cv_best_macro_f1": 0.9933078169531337,
+  "search_seconds": 23.29,
+  "refit_seconds": 0.95,
+  "search_rows": 300000,
+  "n_configurations": 48,
+  "tree_depth": 16,
+  "tree_leaves": 350,
+  "n_parameters_proxy_nodes": 699
+}

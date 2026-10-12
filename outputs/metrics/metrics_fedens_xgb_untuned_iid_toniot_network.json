@@ -1,0 +1,79 @@
+{
+  "run": "fedens_xgb_untuned_iid_toniot_network",
+  "seed": 42,
+  "alpha": "iid",
+  "domain": "toniot_network",
+  "eval_samples": 75002,
+  "test_f1": 0.991754496092232,
+  "test_metrics": {
+    "Accuracy": 0.9985733713767633,
+    "Precision (Macro)": 0.9911285242713238,
+    "Precision (Weighted)": 0.9985704449748889,
+    "Recall (Macro)": 0.9924306710544444,
+    "Recall (Weighted)": 0.9985733713767633,
+    "F1 (Macro)": 0.991754496092232,
+    "F1 (Weighted)": 0.9985702135814736,
+    "FPR (Macro)": 0.00021758001751424997,
+    "FPR (Weighted)": 0.00031401151687728587,
+    "Inference (s)": 2.9875681400299072
+  },
+  "test_accuracy": 0.9985733713767633,
+  "test_precision_macro": 0.9911285242713238,
+  "test_precision_weighted": 0.9985704449748889,
+  "test_recall_macro": 0.9924306710544444,
+  "test_recall_weighted": 0.9985733713767633,
+  "test_f1_macro": 0.991754496092232,
+  "test_f1_weighted": 0.9985702135814736,
+  "test_fpr_macro": 0.00021758001751424997,
+  "test_fpr_weighted": 0.00031401151687728587,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "DoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware",
+      "Spoofing"
+    ],
+    "fpr": [
+      0.0004672704533897723,
+      0.0003574194317031036,
+      9.992862241256246e-05,
+      0.00046598322460391424,
+      5.873025195278088e-05,
+      0.0001707146737021805,
+      1.3708770871603651e-05,
+      0.00010688471147808195
+    ],
+    "support": [
+      2239,
+      24641,
+      4952,
+      23498,
+      6894,
+      10567,
+      2056,
+      155
+    ]
+  },
+  "train_time": 10.4705331325531,
+  "test_time": 2.9875681400299072,
+  "emissions_kg": 1.5667894496877065e-05,
+  "energy_kwh": 2.2660753874145865e-05,
+  "energy_kwh_above_idle": 2.6257313173225867e-06,
+  "idle_kwh_per_hour": 0.006888482209212667,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0,
+  "n_clients_trained": 15,
+  "n_clients_single_class": 0,
+  "client_hyperparameter_tuning": "library defaults on every client (no local hyperparameter search); same Dirichlet shards and probability averaging as the tuned ensemble",
+  "client_tuning_provenance": {
+    "summary": "library defaults on every client (no local hyperparameter search); same Dirichlet shards and probability averaging as the tuned ensemble",
+    "client_tuning_enabled": false,
+    "n_clients_locally_tuned": 0,
+    "n_clients_in_record": 15
+  }
+}

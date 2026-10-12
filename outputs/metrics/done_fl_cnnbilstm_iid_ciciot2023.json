@@ -1,7 +1,7 @@
 {
   "tag": "fl_cnnbilstm_iid",
   "domain": "ciciot2023",
-  "completed_local": "2026-10-06T00:11:46",
+  "completed_local": "2026-10-08T18:10:52",
   "global_rounds": 100,
   "seed": 42
 }

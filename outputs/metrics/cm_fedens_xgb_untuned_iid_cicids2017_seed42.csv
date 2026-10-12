@@ -1,0 +1,8 @@
+,Benign,DDoS,DoS,Reconnaissance,BruteForce,WebAttack,Malware
+Benign,61864,0,7,11,2,1,30
+DDoS,6,3836,1,0,0,0,0
+DoS,10,0,5802,0,0,0,0
+Reconnaissance,4,0,1,2704,0,1,0
+BruteForce,8,0,0,0,277,34,0
+WebAttack,9,0,2,0,8,84,0
+Malware,15,0,0,0,0,0,283

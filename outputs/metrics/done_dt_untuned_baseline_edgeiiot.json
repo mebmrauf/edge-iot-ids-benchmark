@@ -1,7 +1,8 @@
 {
   "tag": "dt_untuned_baseline",
   "domain": "edgeiiot",
-  "completed_local": "2026-10-05T23:37:50",
+  "completed_local": "2026-10-08T15:23:05",
   "global_rounds": 100,
-  "seed": 42
+  "seed": 42,
+  "tree_features": "raw"
 }

@@ -1,0 +1,5 @@
+Model,XGB ens. (untuned),DT ens. (untuned),ANN,SNN
+XGB ens. (untuned),1.0,0.8443,0.0012,0.0
+DT ens. (untuned),0.8443,1.0,0.021,0.0
+ANN,0.0012,0.021,1.0,0.1257
+SNN,0.0,0.0,0.1257,1.0

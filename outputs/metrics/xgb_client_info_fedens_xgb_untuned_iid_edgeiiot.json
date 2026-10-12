@@ -1,0 +1,145 @@
+{
+  "tag": "fedens_xgb_untuned_iid",
+  "domain": "edgeiiot",
+  "alpha": "iid",
+  "seed": 42,
+  "client_tuning_enabled": false,
+  "checkpoint_mode": "defaults",
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 23330,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 1,
+      "n_rows": 23332,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 2,
+      "n_rows": 23335,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 3,
+      "n_rows": 23332,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 4,
+      "n_rows": 23335,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 5,
+      "n_rows": 23331,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 6,
+      "n_rows": 23333,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 7,
+      "n_rows": 23334,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 8,
+      "n_rows": 23334,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 9,
+      "n_rows": 23333,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 10,
+      "n_rows": 23333,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 11,
+      "n_rows": 23332,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 12,
+      "n_rows": 23334,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 13,
+      "n_rows": 23332,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    },
+    {
+      "client": 14,
+      "n_rows": 23337,
+      "n_classes_local": 7,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "n_trees": 100
+    }
+  ]
+}

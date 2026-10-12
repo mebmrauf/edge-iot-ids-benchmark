@@ -1,0 +1,143 @@
+Centralized -> federated Macro-F1 loss. One-sided exact Wilcoxon signed-rank (H1: centralized > federated).
+'untuned trees' pairs each federated ensemble with its untuned centralized model; ANN/SNN are default (untuned) in both pairings.
+
+               Pairing         Model  n_pairs  mean_F1_drop  median_F1_drop  n_federated_worse  n_federated_better_or_equal  p_one_sided_exact          p_method
+tuned trees (original) Decision Tree       16        0.0061          0.0054                 13                            3           0.001678 exact enumeration
+tuned trees (original)       XGBoost       16        0.0174          0.0122                 16                            0           0.000015 exact enumeration
+tuned trees (original)           ANN       16        0.0294          0.0202                 16                            0           0.000015 exact enumeration
+tuned trees (original)           SNN       16        0.0685          0.0649                 16                            0           0.000015 exact enumeration
+         untuned trees Decision Tree       16       -0.0062         -0.0042                  6                           10           0.851074 exact enumeration
+         untuned trees       XGBoost       16        0.0111          0.0055                 14                            2           0.000107 exact enumeration
+         untuned trees           ANN       16        0.0294          0.0202                 16                            0           0.000015 exact enumeration
+         untuned trees           SNN       16        0.0685          0.0649                 16                            0           0.000015 exact enumeration
+
+Per-block detail:
+               Pairing         Model        Dataset    Alpha  Centralized  Federated  Degradation
+tuned trees (original) Decision Tree     CICIDS2017      iid       0.9352     0.9343       0.0009
+tuned trees (original) Decision Tree     CICIDS2017 alpha0.5       0.9352     0.9231       0.0122
+tuned trees (original) Decision Tree     CICIDS2017 alpha1.0       0.9352     0.9386      -0.0034
+tuned trees (original) Decision Tree     CICIDS2017 alpha2.0       0.9352     0.9402      -0.0050
+tuned trees (original) Decision Tree     CICIOT2023      iid       0.6950     0.6908       0.0042
+tuned trees (original) Decision Tree     CICIOT2023 alpha0.5       0.6950     0.6783       0.0166
+tuned trees (original) Decision Tree     CICIOT2023 alpha1.0       0.6950     0.6794       0.0156
+tuned trees (original) Decision Tree     CICIOT2023 alpha2.0       0.6950     0.6960      -0.0010
+tuned trees (original) Decision Tree       EDGEIIOT      iid       0.9701     0.9669       0.0032
+tuned trees (original) Decision Tree       EDGEIIOT alpha0.5       0.9701     0.9583       0.0118
+tuned trees (original) Decision Tree       EDGEIIOT alpha1.0       0.9701     0.9634       0.0066
+tuned trees (original) Decision Tree       EDGEIIOT alpha2.0       0.9701     0.9660       0.0041
+tuned trees (original) Decision Tree TONIOT_NETWORK      iid       0.9948     0.9908       0.0040
+tuned trees (original) Decision Tree TONIOT_NETWORK alpha0.5       0.9948     0.9811       0.0137
+tuned trees (original) Decision Tree TONIOT_NETWORK alpha1.0       0.9948     0.9880       0.0068
+tuned trees (original) Decision Tree TONIOT_NETWORK alpha2.0       0.9948     0.9879       0.0069
+tuned trees (original)       XGBoost     CICIDS2017      iid       0.9509     0.9376       0.0132
+tuned trees (original)       XGBoost     CICIDS2017 alpha0.5       0.9509     0.9295       0.0214
+tuned trees (original)       XGBoost     CICIDS2017 alpha1.0       0.9509     0.9343       0.0166
+tuned trees (original)       XGBoost     CICIDS2017 alpha2.0       0.9509     0.9397       0.0112
+tuned trees (original)       XGBoost     CICIOT2023      iid       0.7318     0.6942       0.0376
+tuned trees (original)       XGBoost     CICIOT2023 alpha0.5       0.7318     0.6874       0.0445
+tuned trees (original)       XGBoost     CICIOT2023 alpha1.0       0.7318     0.6844       0.0474
+tuned trees (original)       XGBoost     CICIOT2023 alpha2.0       0.7318     0.6950       0.0368
+tuned trees (original)       XGBoost       EDGEIIOT      iid       0.9673     0.9627       0.0046
+tuned trees (original)       XGBoost       EDGEIIOT alpha0.5       0.9673     0.9524       0.0149
+tuned trees (original)       XGBoost       EDGEIIOT alpha1.0       0.9673     0.9607       0.0066
+tuned trees (original)       XGBoost       EDGEIIOT alpha2.0       0.9673     0.9631       0.0042
+tuned trees (original)       XGBoost TONIOT_NETWORK      iid       0.9967     0.9920       0.0047
+tuned trees (original)       XGBoost TONIOT_NETWORK alpha0.5       0.9967     0.9916       0.0050
+tuned trees (original)       XGBoost TONIOT_NETWORK alpha1.0       0.9967     0.9921       0.0046
+tuned trees (original)       XGBoost TONIOT_NETWORK alpha2.0       0.9967     0.9915       0.0052
+tuned trees (original)           ANN     CICIDS2017      iid       0.9109     0.9079       0.0030
+tuned trees (original)           ANN     CICIDS2017 alpha0.5       0.9109     0.9005       0.0104
+tuned trees (original)           ANN     CICIDS2017 alpha1.0       0.9109     0.9061       0.0048
+tuned trees (original)           ANN     CICIDS2017 alpha2.0       0.9109     0.8942       0.0167
+tuned trees (original)           ANN     CICIOT2023      iid       0.6802     0.6478       0.0325
+tuned trees (original)           ANN     CICIOT2023 alpha0.5       0.6802     0.6452       0.0350
+tuned trees (original)           ANN     CICIOT2023 alpha1.0       0.6802     0.6379       0.0423
+tuned trees (original)           ANN     CICIOT2023 alpha2.0       0.6802     0.6586       0.0216
+tuned trees (original)           ANN       EDGEIIOT      iid       0.9657     0.9126       0.0531
+tuned trees (original)           ANN       EDGEIIOT alpha0.5       0.9657     0.8873       0.0784
+tuned trees (original)           ANN       EDGEIIOT alpha1.0       0.9657     0.8886       0.0771
+tuned trees (original)           ANN       EDGEIIOT alpha2.0       0.9657     0.9143       0.0513
+tuned trees (original)           ANN TONIOT_NETWORK      iid       0.9932     0.9860       0.0072
+tuned trees (original)           ANN TONIOT_NETWORK alpha0.5       0.9932     0.9745       0.0187
+tuned trees (original)           ANN TONIOT_NETWORK alpha1.0       0.9932     0.9848       0.0084
+tuned trees (original)           ANN TONIOT_NETWORK alpha2.0       0.9932     0.9841       0.0092
+tuned trees (original)           SNN     CICIDS2017      iid       0.9038     0.8921       0.0117
+tuned trees (original)           SNN     CICIDS2017 alpha0.5       0.9038     0.8253       0.0785
+tuned trees (original)           SNN     CICIDS2017 alpha1.0       0.9038     0.8854       0.0185
+tuned trees (original)           SNN     CICIDS2017 alpha2.0       0.9038     0.8887       0.0151
+tuned trees (original)           SNN     CICIOT2023      iid       0.6763     0.6102       0.0661
+tuned trees (original)           SNN     CICIOT2023 alpha0.5       0.6763     0.5942       0.0821
+tuned trees (original)           SNN     CICIOT2023 alpha1.0       0.6763     0.5962       0.0801
+tuned trees (original)           SNN     CICIOT2023 alpha2.0       0.6763     0.6126       0.0637
+tuned trees (original)           SNN       EDGEIIOT      iid       0.9274     0.8133       0.1140
+tuned trees (original)           SNN       EDGEIIOT alpha0.5       0.9274     0.7838       0.1435
+tuned trees (original)           SNN       EDGEIIOT alpha1.0       0.9274     0.7881       0.1392
+tuned trees (original)           SNN       EDGEIIOT alpha2.0       0.9274     0.8068       0.1205
+tuned trees (original)           SNN TONIOT_NETWORK      iid       0.9918     0.9573       0.0345
+tuned trees (original)           SNN TONIOT_NETWORK alpha0.5       0.9918     0.9399       0.0518
+tuned trees (original)           SNN TONIOT_NETWORK alpha1.0       0.9918     0.9490       0.0428
+tuned trees (original)           SNN TONIOT_NETWORK alpha2.0       0.9918     0.9583       0.0335
+         untuned trees Decision Tree     CICIDS2017      iid       0.9343     0.9386      -0.0043
+         untuned trees Decision Tree     CICIDS2017 alpha0.5       0.9343     0.9190       0.0153
+         untuned trees Decision Tree     CICIDS2017 alpha1.0       0.9343     0.9271       0.0072
+         untuned trees Decision Tree     CICIDS2017 alpha2.0       0.9343     0.9385      -0.0041
+         untuned trees Decision Tree     CICIOT2023      iid       0.6587     0.6949      -0.0362
+         untuned trees Decision Tree     CICIOT2023 alpha0.5       0.6587     0.6702      -0.0116
+         untuned trees Decision Tree     CICIOT2023 alpha1.0       0.6587     0.6875      -0.0289
+         untuned trees Decision Tree     CICIOT2023 alpha2.0       0.6587     0.6942      -0.0356
+         untuned trees Decision Tree       EDGEIIOT      iid       0.9563     0.9664      -0.0102
+         untuned trees Decision Tree       EDGEIIOT alpha0.5       0.9563     0.9591      -0.0028
+         untuned trees Decision Tree       EDGEIIOT alpha1.0       0.9563     0.9631      -0.0068
+         untuned trees Decision Tree       EDGEIIOT alpha2.0       0.9563     0.9652      -0.0090
+         untuned trees Decision Tree TONIOT_NETWORK      iid       0.9946     0.9894       0.0052
+         untuned trees Decision Tree TONIOT_NETWORK alpha0.5       0.9946     0.9807       0.0139
+         untuned trees Decision Tree TONIOT_NETWORK alpha1.0       0.9946     0.9897       0.0049
+         untuned trees Decision Tree TONIOT_NETWORK alpha2.0       0.9946     0.9901       0.0045
+         untuned trees       XGBoost     CICIDS2017      iid       0.9395     0.9410      -0.0015
+         untuned trees       XGBoost     CICIDS2017 alpha0.5       0.9395     0.9277       0.0118
+         untuned trees       XGBoost     CICIDS2017 alpha1.0       0.9395     0.9370       0.0025
+         untuned trees       XGBoost     CICIDS2017 alpha2.0       0.9395     0.9418      -0.0022
+         untuned trees       XGBoost     CICIOT2023      iid       0.7251     0.6948       0.0303
+         untuned trees       XGBoost     CICIOT2023 alpha0.5       0.7251     0.6902       0.0350
+         untuned trees       XGBoost     CICIOT2023 alpha1.0       0.7251     0.6932       0.0319
+         untuned trees       XGBoost     CICIOT2023 alpha2.0       0.7251     0.6988       0.0263
+         untuned trees       XGBoost       EDGEIIOT      iid       0.9665     0.9629       0.0036
+         untuned trees       XGBoost       EDGEIIOT alpha0.5       0.9665     0.9536       0.0128
+         untuned trees       XGBoost       EDGEIIOT alpha1.0       0.9665     0.9601       0.0064
+         untuned trees       XGBoost       EDGEIIOT alpha2.0       0.9665     0.9644       0.0020
+         untuned trees       XGBoost TONIOT_NETWORK      iid       0.9962     0.9918       0.0044
+         untuned trees       XGBoost TONIOT_NETWORK alpha0.5       0.9962     0.9897       0.0065
+         untuned trees       XGBoost TONIOT_NETWORK alpha1.0       0.9962     0.9923       0.0039
+         untuned trees       XGBoost TONIOT_NETWORK alpha2.0       0.9962     0.9916       0.0046
+         untuned trees           ANN     CICIDS2017      iid       0.9109     0.9079       0.0030
+         untuned trees           ANN     CICIDS2017 alpha0.5       0.9109     0.9005       0.0104
+         untuned trees           ANN     CICIDS2017 alpha1.0       0.9109     0.9061       0.0048
+         untuned trees           ANN     CICIDS2017 alpha2.0       0.9109     0.8942       0.0167
+         untuned trees           ANN     CICIOT2023      iid       0.6802     0.6478       0.0325
+         untuned trees           ANN     CICIOT2023 alpha0.5       0.6802     0.6452       0.0350
+         untuned trees           ANN     CICIOT2023 alpha1.0       0.6802     0.6379       0.0423
+         untuned trees           ANN     CICIOT2023 alpha2.0       0.6802     0.6586       0.0216
+         untuned trees           ANN       EDGEIIOT      iid       0.9657     0.9126       0.0531
+         untuned trees           ANN       EDGEIIOT alpha0.5       0.9657     0.8873       0.0784
+         untuned trees           ANN       EDGEIIOT alpha1.0       0.9657     0.8886       0.0771
+         untuned trees           ANN       EDGEIIOT alpha2.0       0.9657     0.9143       0.0513
+         untuned trees           ANN TONIOT_NETWORK      iid       0.9932     0.9860       0.0072
+         untuned trees           ANN TONIOT_NETWORK alpha0.5       0.9932     0.9745       0.0187
+         untuned trees           ANN TONIOT_NETWORK alpha1.0       0.9932     0.9848       0.0084
+         untuned trees           ANN TONIOT_NETWORK alpha2.0       0.9932     0.9841       0.0092
+         untuned trees           SNN     CICIDS2017      iid       0.9038     0.8921       0.0117
+         untuned trees           SNN     CICIDS2017 alpha0.5       0.9038     0.8253       0.0785
+         untuned trees           SNN     CICIDS2017 alpha1.0       0.9038     0.8854       0.0185
+         untuned trees           SNN     CICIDS2017 alpha2.0       0.9038     0.8887       0.0151
+         untuned trees           SNN     CICIOT2023      iid       0.6763     0.6102       0.0661
+         untuned trees           SNN     CICIOT2023 alpha0.5       0.6763     0.5942       0.0821
+         untuned trees           SNN     CICIOT2023 alpha1.0       0.6763     0.5962       0.0801
+         untuned trees           SNN     CICIOT2023 alpha2.0       0.6763     0.6126       0.0637
+         untuned trees           SNN       EDGEIIOT      iid       0.9274     0.8133       0.1140
+         untuned trees           SNN       EDGEIIOT alpha0.5       0.9274     0.7838       0.1435
+         untuned trees           SNN       EDGEIIOT alpha1.0       0.9274     0.7881       0.1392
+         untuned trees           SNN       EDGEIIOT alpha2.0       0.9274     0.8068       0.1205
+         untuned trees           SNN TONIOT_NETWORK      iid       0.9918     0.9573       0.0345
+         untuned trees           SNN TONIOT_NETWORK alpha0.5       0.9918     0.9399       0.0518
+         untuned trees           SNN TONIOT_NETWORK alpha1.0       0.9918     0.9490       0.0428
+         untuned trees           SNN TONIOT_NETWORK alpha2.0       0.9918     0.9583       0.0335

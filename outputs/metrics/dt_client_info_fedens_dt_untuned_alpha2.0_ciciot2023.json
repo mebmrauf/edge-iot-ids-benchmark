@@ -1,0 +1,175 @@
+{
+  "tag": "fedens_dt_untuned_alpha2.0",
+  "domain": "ciciot2023",
+  "alpha": 2.0,
+  "seed": 42,
+  "client_tuning_enabled": false,
+  "checkpoint_mode": "defaults",
+  "clients": [
+    {
+      "client": 0,
+      "n_rows": 13822,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 39,
+      "tree_leaves": 1920,
+      "tree_nodes": 3839
+    },
+    {
+      "client": 1,
+      "n_rows": 16035,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 46,
+      "tree_leaves": 2522,
+      "tree_nodes": 5043
+    },
+    {
+      "client": 2,
+      "n_rows": 23628,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 52,
+      "tree_leaves": 3941,
+      "tree_nodes": 7881
+    },
+    {
+      "client": 3,
+      "n_rows": 42733,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 68,
+      "tree_leaves": 4345,
+      "tree_nodes": 8689
+    },
+    {
+      "client": 4,
+      "n_rows": 23442,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 41,
+      "tree_leaves": 2772,
+      "tree_nodes": 5543
+    },
+    {
+      "client": 5,
+      "n_rows": 24279,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 62,
+      "tree_leaves": 3147,
+      "tree_nodes": 6293
+    },
+    {
+      "client": 6,
+      "n_rows": 12621,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 45,
+      "tree_leaves": 1689,
+      "tree_nodes": 3377
+    },
+    {
+      "client": 7,
+      "n_rows": 24667,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 48,
+      "tree_leaves": 3458,
+      "tree_nodes": 6915
+    },
+    {
+      "client": 8,
+      "n_rows": 25521,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 75,
+      "tree_leaves": 4411,
+      "tree_nodes": 8821
+    },
+    {
+      "client": 9,
+      "n_rows": 24271,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 52,
+      "tree_leaves": 3803,
+      "tree_nodes": 7605
+    },
+    {
+      "client": 10,
+      "n_rows": 19227,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 72,
+      "tree_leaves": 2930,
+      "tree_nodes": 5859
+    },
+    {
+      "client": 11,
+      "n_rows": 19638,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 46,
+      "tree_leaves": 2429,
+      "tree_nodes": 4857
+    },
+    {
+      "client": 12,
+      "n_rows": 21449,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 40,
+      "tree_leaves": 2701,
+      "tree_nodes": 5401
+    },
+    {
+      "client": 13,
+      "n_rows": 25503,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 48,
+      "tree_leaves": 1929,
+      "tree_nodes": 3857
+    },
+    {
+      "client": 14,
+      "n_rows": 33161,
+      "n_classes_local": 8,
+      "tuned": false,
+      "reason": "untuned variant: library defaults",
+      "params_used": {},
+      "tree_depth": 49,
+      "tree_leaves": 2883,
+      "tree_nodes": 5765
+    }
+  ]
+}

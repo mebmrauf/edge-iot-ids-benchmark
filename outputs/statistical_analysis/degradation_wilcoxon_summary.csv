@@ -1,5 +1,7 @@
-Model,n_pairs,mean_F1_drop,median_F1_drop,n_federated_worse,n_federated_better_or_equal,wilcoxon_stat,p_two_sided,p_one_sided_degrades
-ANN,16,0.0294,0.0202,16,0,0.0,0.0,0.0
-Decision Tree,16,0.0103,0.0066,16,0,0.0,0.0004,0.0002
-SNN,16,0.0685,0.0649,16,0,0.0,0.0,0.0
-XGBoost,16,0.0165,0.0087,16,0,0.0,0.0004,0.0002
+Model,n_pairs,mean_F1_drop,median_F1_drop,n_federated_worse,n_federated_better_or_equal,wilcoxon_W_plus,p_one_sided_exact
+XGBoost (tuned),16,0.0174,0.0122,16,0,136.0,1.52587890625e-05
+XGBoost (untuned),16,0.0111,0.0055,14,2,132.0,0.0001068115234375
+Decision Tree (tuned),16,0.0061,0.0054,13,3,122.0,0.001678466796875
+Decision Tree (untuned),16,-0.0062,-0.0042,6,10,48.0,0.85107421875
+ANN,16,0.0294,0.0202,16,0,136.0,1.52587890625e-05
+SNN,16,0.0685,0.0649,16,0,136.0,1.52587890625e-05

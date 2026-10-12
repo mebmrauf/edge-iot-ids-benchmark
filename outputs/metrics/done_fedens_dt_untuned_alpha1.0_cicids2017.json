@@ -1,0 +1,8 @@
+{
+  "tag": "fedens_dt_untuned_alpha1.0",
+  "domain": "cicids2017",
+  "completed_local": "2026-10-08T17:55:34",
+  "global_rounds": 100,
+  "seed": 42,
+  "tree_features": "raw"
+}

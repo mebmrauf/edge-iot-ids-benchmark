@@ -4,11 +4,11 @@
     "max_depth": 6,
     "n_estimators": 300
   },
-  "cv_best_macro_f1": 0.9948737508082065,
-  "search_seconds": 570.29,
-  "refit_seconds": 62.38,
+  "cv_best_macro_f1": 0.9952733842881685,
+  "search_seconds": 353.17,
+  "refit_seconds": 39.4,
   "search_rows": 300000,
   "n_configurations": 8,
   "n_trees": 300,
-  "n_parameters_proxy_nodes": 82978
+  "n_parameters_proxy_nodes": 80092
 }

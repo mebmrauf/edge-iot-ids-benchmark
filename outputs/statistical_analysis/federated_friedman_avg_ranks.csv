@@ -1,5 +1,7 @@
 Model,avg_rank
-XGBoost (fed. ensemble),1.375
-Decision Tree (fed. ensemble),1.6875
-ANN,2.9375
-SNN,4.0
+XGB ens. (tuned),2.625
+XGB ens. (untuned),1.875
+DT ens. (tuned),2.625
+DT ens. (untuned),2.875
+ANN,5.0
+SNN,6.0

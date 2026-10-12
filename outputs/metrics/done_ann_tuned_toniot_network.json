@@ -1,7 +1,7 @@
 {
   "tag": "ann_tuned",
   "domain": "toniot_network",
-  "completed_local": "2026-10-05T23:56:50",
+  "completed_local": "2026-10-08T18:00:47",
   "global_rounds": 100,
   "seed": 42
 }

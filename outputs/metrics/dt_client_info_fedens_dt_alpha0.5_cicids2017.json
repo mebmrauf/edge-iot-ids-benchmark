@@ -36,9 +36,9 @@
       "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
       "best_params": {},
       "params_used": {},
-      "tree_depth": 24,
-      "tree_leaves": 114,
-      "tree_nodes": 227
+      "tree_depth": 21,
+      "tree_leaves": 99,
+      "tree_nodes": 197
     },
     {
       "client": 1,
@@ -52,10 +52,10 @@
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.6986529028942123,
+      "cv_best_macro_f1": 0.7000940253988261,
       "cv_splits": 2,
       "search_rows": 50001,
-      "search_seconds": 5.85,
+      "search_seconds": 6.22,
       "params_used": {
         "class_weight": "balanced",
         "criterion": "entropy",
@@ -63,8 +63,8 @@
         "min_samples_leaf": 1
       },
       "tree_depth": 16,
-      "tree_leaves": 117,
-      "tree_nodes": 233
+      "tree_leaves": 113,
+      "tree_nodes": 225
     },
     {
       "client": 2,
@@ -74,21 +74,21 @@
       "tuned": true,
       "best_params": {
         "class_weight": null,
-        "criterion": "entropy",
-        "max_depth": 16,
+        "criterion": "gini",
+        "max_depth": 24,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.7888812111352959,
+      "cv_best_macro_f1": 0.8728031808358918,
       "cv_splits": 3,
       "search_rows": 16484,
-      "search_seconds": 3.45,
+      "search_seconds": 3.71,
       "params_used": {
         "class_weight": null,
-        "criterion": "entropy",
-        "max_depth": 16,
+        "criterion": "gini",
+        "max_depth": 24,
         "min_samples_leaf": 1
       },
-      "tree_depth": 15,
+      "tree_depth": 19,
       "tree_leaves": 102,
       "tree_nodes": 203
     },
@@ -104,10 +104,10 @@
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.9418680749264169,
+      "cv_best_macro_f1": 0.9365373301563108,
       "cv_splits": 3,
       "search_rows": 10050,
-      "search_seconds": 2.07,
+      "search_seconds": 2.32,
       "params_used": {
         "class_weight": "balanced",
         "criterion": "entropy",
@@ -115,8 +115,8 @@
         "min_samples_leaf": 1
       },
       "tree_depth": 15,
-      "tree_leaves": 86,
-      "tree_nodes": 171
+      "tree_leaves": 80,
+      "tree_nodes": 159
     },
     {
       "client": 4,
@@ -127,22 +127,22 @@
       "best_params": {
         "class_weight": null,
         "criterion": "entropy",
-        "max_depth": 16,
+        "max_depth": 24,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.7843071768238864,
+      "cv_best_macro_f1": 0.8104390474644979,
       "cv_splits": 3,
       "search_rows": 18784,
-      "search_seconds": 2.88,
+      "search_seconds": 3.46,
       "params_used": {
         "class_weight": null,
         "criterion": "entropy",
-        "max_depth": 16,
+        "max_depth": 24,
         "min_samples_leaf": 1
       },
-      "tree_depth": 16,
-      "tree_leaves": 115,
-      "tree_nodes": 229
+      "tree_depth": 14,
+      "tree_leaves": 105,
+      "tree_nodes": 209
     },
     {
       "client": 5,
@@ -156,10 +156,10 @@
         "max_depth": 24,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.8112978766792663,
+      "cv_best_macro_f1": 0.8222122952035348,
       "cv_splits": 3,
       "search_rows": 21910,
-      "search_seconds": 5.43,
+      "search_seconds": 5.88,
       "params_used": {
         "class_weight": "balanced",
         "criterion": "entropy",
@@ -167,8 +167,8 @@
         "min_samples_leaf": 1
       },
       "tree_depth": 16,
-      "tree_leaves": 145,
-      "tree_nodes": 289
+      "tree_leaves": 139,
+      "tree_nodes": 277
     },
     {
       "client": 6,
@@ -182,10 +182,10 @@
         "max_depth": 8,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.8914990329546763,
+      "cv_best_macro_f1": 0.8735159621674472,
       "cv_splits": 3,
       "search_rows": 3323,
-      "search_seconds": 0.44,
+      "search_seconds": 0.47,
       "params_used": {
         "class_weight": "balanced",
         "criterion": "entropy",
@@ -193,8 +193,8 @@
         "min_samples_leaf": 1
       },
       "tree_depth": 8,
-      "tree_leaves": 50,
-      "tree_nodes": 99
+      "tree_leaves": 46,
+      "tree_nodes": 91
     },
     {
       "client": 7,
@@ -208,19 +208,19 @@
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.9350111959207918,
+      "cv_best_macro_f1": 0.9373087219191897,
       "cv_splits": 3,
       "search_rows": 9184,
-      "search_seconds": 1.94,
+      "search_seconds": 2.07,
       "params_used": {
         "class_weight": "balanced",
         "criterion": "entropy",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "tree_depth": 16,
-      "tree_leaves": 125,
-      "tree_nodes": 249
+      "tree_depth": 14,
+      "tree_leaves": 113,
+      "tree_nodes": 225
     },
     {
       "client": 8,
@@ -229,24 +229,24 @@
       "n_configurations": 48,
       "tuned": true,
       "best_params": {
-        "class_weight": "balanced",
+        "class_weight": null,
         "criterion": "entropy",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.8800520255893122,
+      "cv_best_macro_f1": 0.8741232787086527,
       "cv_splits": 3,
       "search_rows": 8812,
-      "search_seconds": 1.51,
+      "search_seconds": 1.64,
       "params_used": {
-        "class_weight": "balanced",
+        "class_weight": null,
         "criterion": "entropy",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "tree_depth": 14,
-      "tree_leaves": 91,
-      "tree_nodes": 181
+      "tree_depth": 15,
+      "tree_leaves": 86,
+      "tree_nodes": 171
     },
     {
       "client": 9,
@@ -255,17 +255,17 @@
       "n_configurations": 48,
       "tuned": true,
       "best_params": {
-        "class_weight": null,
+        "class_weight": "balanced",
         "criterion": "gini",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.7995828456085002,
+      "cv_best_macro_f1": 0.8260864071614574,
       "cv_splits": 3,
       "search_rows": 1606,
       "search_seconds": 0.27,
       "params_used": {
-        "class_weight": null,
+        "class_weight": "balanced",
         "criterion": "gini",
         "max_depth": 16,
         "min_samples_leaf": 1
@@ -281,24 +281,24 @@
       "n_configurations": 48,
       "tuned": true,
       "best_params": {
-        "class_weight": "balanced",
-        "criterion": "gini",
+        "class_weight": null,
+        "criterion": "entropy",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "cv_best_macro_f1": 0.8567066229661746,
+      "cv_best_macro_f1": 0.8472348207465044,
       "cv_splits": 3,
       "search_rows": 18571,
-      "search_seconds": 4.42,
+      "search_seconds": 4.87,
       "params_used": {
-        "class_weight": "balanced",
-        "criterion": "gini",
+        "class_weight": null,
+        "criterion": "entropy",
         "max_depth": 16,
         "min_samples_leaf": 1
       },
-      "tree_depth": 16,
-      "tree_leaves": 152,
-      "tree_nodes": 303
+      "tree_depth": 15,
+      "tree_leaves": 104,
+      "tree_nodes": 207
     },
     {
       "client": 11,
@@ -322,9 +322,9 @@
       "reason": "shard cannot support stratified CV (<2 classes, or a class with <2 rows)",
       "best_params": {},
       "params_used": {},
-      "tree_depth": 16,
-      "tree_leaves": 89,
-      "tree_nodes": 177
+      "tree_depth": 17,
+      "tree_leaves": 94,
+      "tree_nodes": 187
     },
     {
       "client": 13,
@@ -335,9 +335,9 @@
       "reason": "shard cannot support stratified CV after the search-row cap",
       "best_params": {},
       "params_used": {},
-      "tree_depth": 20,
-      "tree_leaves": 217,
-      "tree_nodes": 433
+      "tree_depth": 19,
+      "tree_leaves": 187,
+      "tree_nodes": 373
     },
     {
       "client": 14,
@@ -349,8 +349,8 @@
       "best_params": {},
       "params_used": {},
       "tree_depth": 13,
-      "tree_leaves": 83,
-      "tree_nodes": 165
+      "tree_leaves": 76,
+      "tree_nodes": 151
     }
   ]
 }

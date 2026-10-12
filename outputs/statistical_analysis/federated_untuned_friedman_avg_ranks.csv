@@ -1,0 +1,5 @@
+Model,avg_rank
+XGB ens. (untuned),1.3125
+DT ens. (untuned),1.6875
+ANN,3.0
+SNN,4.0

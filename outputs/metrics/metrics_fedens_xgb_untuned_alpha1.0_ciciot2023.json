@@ -1,0 +1,79 @@
+{
+  "run": "fedens_xgb_untuned_alpha1.0_ciciot2023",
+  "seed": 42,
+  "alpha": 1.0,
+  "domain": "ciciot2023",
+  "eval_samples": 75000,
+  "test_f1": 0.693249133696554,
+  "test_metrics": {
+    "Accuracy": 0.8541866666666666,
+    "Precision (Macro)": 0.8536769058471172,
+    "Precision (Weighted)": 0.8509173224134919,
+    "Recall (Macro)": 0.6567509203073325,
+    "Recall (Weighted)": 0.8541866666666666,
+    "F1 (Macro)": 0.693249133696554,
+    "F1 (Weighted)": 0.840689613472124,
+    "FPR (Macro)": 0.03595199085316698,
+    "FPR (Weighted)": 0.14180259349200253,
+    "Inference (s)": 4.3150739669799805
+  },
+  "test_accuracy": 0.8541866666666666,
+  "test_precision_macro": 0.8536769058471172,
+  "test_precision_weighted": 0.8509173224134919,
+  "test_recall_macro": 0.6567509203073325,
+  "test_recall_weighted": 0.8541866666666666,
+  "test_f1_macro": 0.693249133696554,
+  "test_f1_weighted": 0.840689613472124,
+  "test_fpr_macro": 0.03595199085316698,
+  "test_fpr_weighted": 0.14180259349200253,
+  "test_per_class": {
+    "class_names": [
+      "Benign",
+      "DDoS",
+      "DoS",
+      "Reconnaissance",
+      "BruteForce",
+      "WebAttack",
+      "Malware",
+      "Spoofing"
+    ],
+    "fpr": [
+      0.0160901725959845,
+      0.23352321547910765,
+      0.027147111957423954,
+      0.009449970339509154,
+      0.00012048192771084337,
+      8.032128514056225e-05,
+      4.5493835585278195e-05,
+      0.0011591594048739244
+    ],
+    "support": [
+      4025,
+      43577,
+      13557,
+      2513,
+      300,
+      300,
+      9057,
+      1671
+    ]
+  },
+  "train_time": 13.599102020263672,
+  "test_time": 4.3150739669799805,
+  "emissions_kg": 1.9883412776070146e-05,
+  "energy_kwh": 2.875773277554182e-05,
+  "energy_kwh_above_idle": 2.7362960178045058e-06,
+  "idle_kwh_per_hour": 0.006888482209212667,
+  "snn_sops": 0.0,
+  "hidden_spike_rate": 0.0,
+  "flops_eff": 0.0,
+  "n_clients_trained": 15,
+  "n_clients_single_class": 0,
+  "client_hyperparameter_tuning": "library defaults on every client (no local hyperparameter search); same Dirichlet shards and probability averaging as the tuned ensemble",
+  "client_tuning_provenance": {
+    "summary": "library defaults on every client (no local hyperparameter search); same Dirichlet shards and probability averaging as the tuned ensemble",
+    "client_tuning_enabled": false,
+    "n_clients_locally_tuned": 0,
+    "n_clients_in_record": 15
+  }
+}

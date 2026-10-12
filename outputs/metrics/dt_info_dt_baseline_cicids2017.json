@@ -1,0 +1,16 @@
+{
+  "best_params": {
+    "class_weight": "balanced",
+    "criterion": "entropy",
+    "max_depth": 16,
+    "min_samples_leaf": 1
+  },
+  "cv_best_macro_f1": 0.9368924965701044,
+  "search_seconds": 113.04,
+  "refit_seconds": 4.35,
+  "search_rows": 300000,
+  "n_configurations": 48,
+  "tree_depth": 16,
+  "tree_leaves": 485,
+  "n_parameters_proxy_nodes": 969
+}
